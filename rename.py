@@ -27,7 +27,7 @@ def main():
             search_str = m.group()
             new_name =  f.replace(search_str, args.replace)
             if args.just_print:
-                print(' {0} -> {1} '.format(f, new_name))
+                print(' %s -> %s ' % (f, new_name))
             else:
                 os.rename(f, new_name)
 
